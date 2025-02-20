@@ -27,9 +27,9 @@ router.post('/send-otp', async (req, res) => {
     to: formattedNumber,
     type: "template",
     template: {
-      name: "otpverification",
+      name: "gp_daily_authcode",
       language: {
-        code: "en_US"
+        code: "en"
       },
       components: [
         {
