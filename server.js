@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'http://127.0.0.1:5500', // Allow requests from this origin
+    origin: process.env.CORS_ORIGIN, // Allow requests from this origin
     methods: ['GET', 'POST'], // Allowed methods
     credentials: true, // If you need cookies or auth headers
   }));
